@@ -19,9 +19,6 @@ $(function () {
         method: 'GET',
       })
       .done(function (data) {
-        console.log(data);
-
-
 
         var filteredArticle = data.results.filter(function (val) {
           return val.multimedia.length !== 0;
